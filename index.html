@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CV Generator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h1>Create Your CV</h1>
+            <form id="cv-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="education">Education:</label>
+                <input type="text" id="education" name="education" required>
+
+                <label for="experience">Work Experience:</label>
+                <textarea id="experience" name="experience" required></textarea>
+
+                <button type="button" id="generate-cv">Generate CV</button>
+            </form>
+        </div>
+        <div class="right">
+            <h1>CV Preview</h1>
+            <iframe id="cv-preview"></iframe>
+            <a id="download-cv" href="#" download="cv.pdf">Download CV</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
